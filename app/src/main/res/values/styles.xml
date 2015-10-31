@@ -15,4 +15,6 @@
 
     <color name="border_color">#ff0000</color>
 
+    <color name="home_button">#CB4C57</color>
+
 </resources>
