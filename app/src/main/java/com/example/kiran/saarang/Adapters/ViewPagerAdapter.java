@@ -25,13 +25,12 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
             case 0: return new EventsFragment();
             case 1: return new ScheduleFragment();
             case 2: return new ProshowsFragment();
-            case 3: return new MenuFragment();
             default:return new EventsFragment();
         }
     }
 
     @Override
     public int getCount() {
-        return 4;
+        return 3;
     }
 }

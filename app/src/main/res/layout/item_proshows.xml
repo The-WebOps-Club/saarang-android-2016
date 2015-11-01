@@ -24,12 +24,13 @@
 
             <ImageView
                 android:layout_width="335dp"
-                android:layout_height="115dp"
+                android:layout_height="110dp"
                 android:layout_gravity="center"
                 android:id="@+id/ivProshow"
                 android:background="@drawable/proshow_border"
                 android:src="@drawable/cover"
-                android:scaleType="center"
+                android:scaleType="centerCrop"
+
                 />
        <!--     <RelativeLayout
                 android:layout_width="match_parent"
