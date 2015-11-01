@@ -10,7 +10,7 @@
     <color name="mainactivity_tab_text">#ffffff</color>
     <color name="mainactivity_divider">#ffffff</color>
     <color name="mainactivity_tab_selected">#81AE97</color>
-    <color name="event_background_color">#7cd2ad</color>
+    <color name="event_background_color">#6f7cd2ad</color>
 
 
     <color name="border_color">#ff0000</color>

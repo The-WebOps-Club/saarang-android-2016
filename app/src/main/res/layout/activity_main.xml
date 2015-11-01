@@ -4,7 +4,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-   >
+    android:background="@drawable/bgevents"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/event_background_color"
+        >
 
     <LinearLayout
        android:layout_width="match_parent"
@@ -13,111 +21,132 @@
 
        <com.example.kiran.saarang.Views.TabText
            android:layout_width="0dp"
-           android:layout_height="match_parent"
-           android:layout_weight="4"
-           android:paddingTop="6dp"
-           android:paddingBottom="8dp"
-           android:paddingLeft="3dp"
-           android:paddingRight="3dp"
+           android:layout_height="@dimen/tab_height"
+           android:layout_weight="3"
+           android:paddingTop="@dimen/tab_padding_top"
+           android:paddingBottom="@dimen/tab_padding_bottom"
+           android:paddingLeft="@dimen/tab_padding_left"
+           android:paddingRight="@dimen/tab_padding_right"
            android:textColor="@color/mainactivity_tab_text"
            android:background="@color/mainactivity_tab_selected"
            android:gravity="center"
            android:textAppearance="?android:attr/textAppearanceMedium"
+           android:textSize="@dimen/tab_text_size"
            android:text="EVENTS"
            android:id="@+id/eventsTab"/>
 
        <TextView
            android:layout_width="1dp"
-           android:layout_height="match_parent"
-           android:background="@color/mainactivity_divider"/>
+           android:layout_height="@dimen/tab_height"
+           android:paddingTop="@dimen/divider_padding_top"
+           android:background="@color/mainactivity_divider"
+           android:gravity="center"/>
 
        <com.example.kiran.saarang.Views.TabText
            android:layout_width="0dp"
-           android:layout_height="match_parent"
-           android:layout_weight="5"
-           android:paddingTop="6dp"
-           android:paddingBottom="8dp"
-           android:paddingRight="3dp"
-           android:paddingLeft="3dp"
+           android:layout_height="@dimen/tab_height"
+           android:layout_weight="3"
+           android:paddingTop="@dimen/tab_padding_top"
+           android:paddingBottom="@dimen/tab_padding_bottom"
+           android:paddingLeft="@dimen/tab_padding_left"
+           android:paddingRight="@dimen/tab_padding_right"
            android:textColor="@color/mainactivity_tab_text"
            android:background="@color/mainactivity_tab"
            android:gravity="center"
-           android:text="SCHEDULE"
+           android:text="MAPS"
+           android:textSize="@dimen/tab_text_size"
            android:textAppearance="?android:attr/textAppearanceMedium"
            android:id="@+id/scheduleTab"/>
 
        <TextView
            android:layout_width="1dp"
-           android:layout_height="match_parent"
-           android:background="@color/mainactivity_divider"/>
+           android:layout_height="@dimen/tab_height"
+           android:paddingTop="@dimen/divider_padding_top"
+           android:background="@color/mainactivity_divider"
+           android:gravity="center"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_weight="4"
+            >
 
        <ImageView
-           android:layout_width="0dp"
-           android:layout_height="35dp"
-           android:layout_weight="3"
-           android:paddingTop="8dp"
-           android:paddingBottom="8dp"
-           android:paddingLeft="3dp"
-           android:paddingRight="3dp"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:paddingTop="@dimen/tab_padding_top"
+           android:paddingBottom="@dimen/tab_padding_bottom"
+           android:paddingLeft="@dimen/tab_padding_left"
+           android:paddingRight="@dimen/tab_padding_right"
            android:textColor="@color/mainactivity_tab_text"
            android:background="@color/mainactivity_tab"
-           android:src="@drawable/ic_quiz"
+           android:src="@drawable/ic_logo"
            android:gravity="center_vertical"
+           android:scaleType="centerCrop"
            android:text=""
            android:id="@+id/imageTab"/>
 
+        </RelativeLayout>
+
        <TextView
            android:layout_width="1dp"
-           android:layout_height="match_parent"
-           android:background="@color/mainactivity_divider"/>
+           android:layout_height="@dimen/tab_height"
+           android:paddingTop="@dimen/divider_padding_top"
+           android:background="@color/mainactivity_divider"
+           android:gravity="center"/>
 
        <com.example.kiran.saarang.Views.TabText
            android:layout_width="0dp"
-           android:layout_height="match_parent"
-           android:layout_weight="5"
-           android:paddingTop="6dp"
-           android:paddingBottom="8dp"
-           android:paddingLeft="3dp"
-           android:paddingRight="3dp"
+           android:layout_height="@dimen/tab_height"
+           android:layout_weight="4"
+           android:paddingTop="@dimen/tab_padding_top"
+           android:paddingBottom="@dimen/tab_padding_bottom"
+           android:paddingLeft="@dimen/tab_padding_left"
+           android:paddingRight="@dimen/tab_padding_right"
            android:textColor="@color/mainactivity_tab_text"
            android:background="@color/mainactivity_tab"
            android:gravity="center"
            android:textAppearance="?android:attr/textAppearanceMedium"
-           android:text="PROSHOWS"
+           android:text="SCHEDULE"
+           android:textSize="@dimen/tab_text_size"
            android:id="@+id/proshowsTab"/>
 
        <TextView
            android:layout_width="1dp"
-           android:layout_height="match_parent"
-           android:background="@color/mainactivity_divider"/>
+           android:layout_height="@dimen/tab_height"
+           android:paddingTop="@dimen/divider_padding_top"
+           android:background="@color/mainactivity_divider"
+           android:gravity="center"/>
 
        <com.example.kiran.saarang.Views.TabText
            android:layout_width="0dp"
-           android:layout_height="match_parent"
+           android:layout_height="@dimen/tab_height"
            android:layout_weight="3"
-           android:paddingTop="6dp"
-           android:paddingBottom="8dp"
-           android:paddingLeft="3dp"
-           android:paddingRight="3dp"
+           android:paddingTop="@dimen/tab_padding_top"
+           android:paddingBottom="@dimen/tab_padding_bottom"
+           android:paddingLeft="@dimen/tab_padding_left"
+           android:paddingRight="@dimen/tab_padding_right"
            android:textColor="@color/mainactivity_tab_text"
            android:background="@color/mainactivity_tab"
            android:gravity="center"
            android:textAppearance="?android:attr/textAppearanceMedium"
            android:text="MENU"
+           android:textSize="@dimen/tab_text_size"
            android:id="@+id/menuTab"/>
 
-   </LinearLayout>
+        </LinearLayout>
 
-    <LinearLayout
+        <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/event_background_color"    >
+        android:layout_height="wrap_content">
 
     <android.support.v4.view.ViewPager
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/viewpager">
     </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
 
     </LinearLayout>
 </LinearLayout>
