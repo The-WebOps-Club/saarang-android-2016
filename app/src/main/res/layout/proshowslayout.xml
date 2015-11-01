@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/bgevents"
-        android:alpha="0.4">
-    </LinearLayout>
-
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rvEvents"
-        android:paddingTop="50dp"
+        android:paddingTop="0dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fastScrollAlwaysVisible="true"
         android:fastScrollEnabled="true"
         android:overScrollMode="always" />
 
-</FrameLayout>
+</LinearLayout>
